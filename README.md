@@ -1,7 +1,5 @@
 # Shay Dahan
 
-**Digital hardware design · FPGA · computer architecture**
-
 I design processors and hardware accelerators in Verilog, verify them thoroughly in
 simulation, and run them on real FPGA boards.
 
@@ -10,6 +8,8 @@ simulation, and run them on real FPGA boards.
 A hardware unit for SiLU, an activation function used in neural networks, built into the
 execute stage of a five-stage pipelined 16-bit RISC processor and demonstrated on an
 Intel MAX 10 FPGA (Arrow DECA board).
+
+![Exact SiLU and the four-region hardware approximation, with the absolute error below (maximum 0.142 at x = ±3)](silu_pwl_approximation.png)
 
 - **No multipliers:** a four-region piecewise-linear approximation computed with shifts and
   subtractions only. 77 logic elements, no DSP blocks, one cycle per activation, maximum
